@@ -10,28 +10,27 @@ A Tic Tac Toe game implementation with AI opponents using **Minimax** and **Alph
 
 - **Two AI Algorithms**:
   - **Minimax**: Classic game tree search algorithm
-  - **Alpha-Beta Pruning**: Optimized version with branch pruning
+  - **Alpha-Beta Pruning**: Optimized version with branch pruning  
   
-- **Multiple Interfaces**:
-  - Beautiful GUI with Pygame
-  - Simple Tkinter interface
-  - Console-based version
+- **Beautiful Pygame GUI**:
+  - Modern and intuitive interface
+  - Smooth animations
+  - Responsive controls  
   
 - **Performance Metrics**:
   - Real-time display of nodes visited
   - Execution time measurement
   - Algorithm comparison
 
-- **Clean Design**:
-  - Modern and intuitive UI
-  - Smooth animations
-  - Responsive controls
+- **Interactive Gameplay**:
+  - Choose your AI opponent
+  - Visual feedback
+  - Play again functionality
 
 ## 📋 Requirements
 
 - Python 3.7 or higher
 - Pygame 2.0 or higher
-- Tkinter (usually comes with Python)
 
 ## 🚀 Installation
 
@@ -48,24 +47,11 @@ pip install pygame
 
 ## 🎮 How to Run
 
-### Pygame Version (Recommended)
 ```bash
 python main_pygame.py
 ```
 
-### Tkinter Version
-```bash
-python main.py
-```
-
-### Console Version
-```bash
-python main_console.py
-```
-
 ## 🕹️ How to Play
-
-### Pygame Interface
 
 1. **Start Screen**: Choose your AI opponent
    - Click "Minimax Algorithm" for classic Minimax
@@ -95,10 +81,7 @@ tic_tac_toe_ai/
 ├── game.py              # Core game logic and board management
 ├── minimax.py           # Minimax algorithm implementation
 ├── alphabeta.py         # Alpha-Beta pruning implementation
-│
-├── main_pygame.py       # Pygame GUI (recommended)
-├── main.py              # Tkinter GUI
-├── main_console.py      # Console interface
+├── main_pygame.py       # Pygame GUI
 │
 └── README.md           # Documentation
 ```
@@ -144,6 +127,13 @@ An optimization of Minimax that eliminates branches that don't need to be explor
 - `alphabeta()`: Alpha-Beta pruning implementation
 - Optimized tree traversal with pruning
 
+### main_pygame.py
+- Complete Pygame GUI implementation
+- Start screen with algorithm selection
+- Game screen with visual board
+- End screen with results
+- Performance stats display
+
 ## 🎓 Educational Purpose
 
 This project demonstrates:
@@ -173,12 +163,6 @@ This means:
 - Alpha-Beta will make the same moves as Minimax, but faster
 
 ## 🛠️ Customization
-
-### Change Algorithm Default
-In `main_pygame.py`, modify:
-```python
-selected_algorithm = 'minimax'  # or 'alphabeta'
-```
 
 ### Adjust Colors
 In `main_pygame.py`, customize:
@@ -215,7 +199,7 @@ Make sure all files are in the same directory:
 - Try Alpha-Beta for better performance
 - Check console output for detailed timing
 
-## ���� License
+## 📝 License
 
 This project is open source and available under the MIT License.
 
